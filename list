@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>音乐播放列表</title>
+	<style>
+		#btn{
+			padding-right: 200px;
+			margin-left: 500px;
+			width: 220px;
+		}
+		ul{
+			list-style: none;
+			border-color: black;
+			border-width: 1px;
+			border-style: solid;
+			margin-left: 500px;
+			margin-top: -5px;
+			width: 218px;
+			padding: 0px;
+		}
+		li{
+			margin-top: 20px;
+			font-size: small;
+		    border-bottom: solid 1px black;
+		    padding-left: 10px;
+		 
+		   
+		}
+		#text{
+			display: none;
+		}
+	</style>
+	<script>
+		function toShow(){
+		    var text = document.getElementById('text');
+		    if(text.style.display == 'block'){
+			text.style.display='none';
+		    }
+		    else{
+			text.style.display='block';
+		    }
+			
+		}
+
+
+
+	</script>
+	</head>
+	<body>
+		<label>
+		<input id="btn" type="submit" value="播放列表" name="submit" onclick="toShow()" >
+		</label>
+		<div id="text">
+			<ul>
+				<li>生命有一种绝对-五月天</li>	
+				<li>我-1234567</li>
+			</ul>
+		</div>	
+	</body>
+</html>
